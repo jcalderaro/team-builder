@@ -6,6 +6,8 @@ export default function Member (props) {
         <div>
         <p> {props.member.name} </p>
         <p> {props.member.email} </p>
+        <p> {props.member.role} </p>
+        <p> {props.member.card} </p>
         </div>
         </>
     )

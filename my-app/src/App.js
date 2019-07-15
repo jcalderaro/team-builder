@@ -4,19 +4,40 @@ import TeamList from "./components/TeamList";
 
 function App() {
   const [teamList, setTeamList] = useState([{
-    name: "Jon",
-    email: "123@gmail.com", 
-    role: "Water Boy"
+    name: "Pikachu",
+    email: "Pikachu@gmail.com", 
+    role: "Electric",
+    card: "1"
   },
   {
-    name: "Jaon",
-    email: "1a23@gmail.com", 
-    role: "Wataer Boy"
+    name: "Bulbasaur",
+    email: "Bulbasaur@gmail.com", 
+    role: "Grass",
+    card: "2"
   },
   {
-    name: "Jaon",
-    email: "1a23@gmail.com", 
-    role: "Wataer Boy"
+    name: "Charmander",
+    email: "Charmander@gmail.com", 
+    role: "Fire",
+    card: "3"
+  },
+  {
+    name: "Ekans",
+    email: "Snake@gmail.com", 
+    role: "Poison",
+    card: "4"
+  },
+  {
+    name: "Sandshrew",
+    email: "Sandshrew@gmail.com", 
+    role: "Ground",
+    card: "5"
+  },
+  {
+    name: "Clefairy",
+    email: "Clefairy@gmail.com", 
+    role: "Fairy",
+    card: "6"
   }])
 
 
@@ -24,7 +45,7 @@ function App() {
 
   return (
     <div className="App">
-     <h1> team builder </h1>
+     <h1> Pokemon Team Builder </h1>
      <TeamList teamList = {teamList} />
      
     </div>
