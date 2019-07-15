@@ -4,10 +4,12 @@ export default function Member (props) {
     return (
         <>
         <div>
-        <p> {props.member.name} </p>
-        <p> {props.member.email} </p>
-        <p> {props.member.role} </p>
-        <p> {props.member.card} </p>
+        <br></br>
+        <h3> {props.member.name} </h3>
+        <h3> {props.member.email} </h3>
+        <h3> {props.member.role} </h3>
+        <h3> {props.member.card} </h3>
+        <br></br>
         </div>
         </>
     )
