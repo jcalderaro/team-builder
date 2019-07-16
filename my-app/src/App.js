@@ -1,6 +1,8 @@
 import React, {useState} from "react"
 import './App.css';
 import TeamList from "./components/TeamList";
+import AddForm from './components/AddForm.js';
+
 
 function App() {
   const [teamList, setTeamList] = useState([{
@@ -41,11 +43,14 @@ function App() {
   }])
 
 
+
+
   console.log (teamList) 
 
   return (
     <div className="App">
      <h1> Pokemon Team Builder </h1>
+     <AddForm setTeamList={setTeamList} teamList={teamList} />
      <TeamList teamList = {teamList} />
      
     </div>

@@ -1,5 +1,7 @@
 import React from "react"
 
+import EditForm from './EditForm.js'
+
 export default function Member (props) {
     return (
         <>
@@ -10,6 +12,7 @@ export default function Member (props) {
         <h3> {props.member.role} </h3>
         <h3> {props.member.card} </h3>
         <br></br>
+        <EditForm />
         </div>
         </>
     )
