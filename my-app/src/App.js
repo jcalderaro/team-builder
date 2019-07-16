@@ -37,7 +37,8 @@ function App() {
         setNewMember={setNewMember}
         newMember={newMember}
         handleChange={handleChange}
-        addMember={addMember} 
+        addMember={addMember}
+        editMember={editMember}  
       />
       <MemberList members={members} setMembers={setMembers} />
     </div>
