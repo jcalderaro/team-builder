@@ -2,9 +2,10 @@ import React from 'react'
 
 
 const EditForm = props => {
+    console.log(props)
     return (
         <div>
-            {/* <form>
+            <form>
                 <input
                 placeholder='name'
                 />
@@ -15,10 +16,7 @@ const EditForm = props => {
 
         
             </form>
-            <h2>{props.eachMemberObj.name}</h2>
-            <h2>{props.eachMemberObj.email}</h2>
-            <h2>{props.eachMemberObj.role}</h2>
-            <EditForm member={props.eachMemberObj} /> */}
+                        
         </div>
     )
 }
