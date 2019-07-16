@@ -1,26 +1,37 @@
-import React from 'react'
-
+import React, {useState}from 'react';
 
 const EditForm = props => {
-    return (
-        <div>
-            {/* <form>
-                <input
-                placeholder='name'
-                />
-                <input
-                placeholder='email'
-                />
-                
 
-        
+    const changeHandler = e =>{
+        props.setObject({ ...props.member, [e.target.name]: e.target.value })
+    }
+
+    return(
+        <div>
+            <form>
+                <input
+                    type='text'
+                    placeholder='Enter name here...'
+                    name='name'
+                    value={props.member.name}
+                    onChange={changeHandler}
+                />
+                <input
+                    type='text'
+                    placeholder='Enter email here...'
+                    name='email'
+                    value={props.member.email}
+                    onChange={changeHandler}
+                />
+                <input
+                    type='text'
+                    placeholder='Enter role here...'
+                    name='role'
+                    value={props.member.role}
+                    onChange={changeHandler}
+                />
             </form>
-            <h2>{props.eachMemberObj.name}</h2>
-            <h2>{props.eachMemberObj.email}</h2>
-            <h2>{props.eachMemberObj.role}</h2>
-            <EditForm member={props.eachMemberObj} /> */}
         </div>
     )
 }
-
-export default EditForm
+export default EditForm;

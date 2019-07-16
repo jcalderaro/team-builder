@@ -1,19 +1,21 @@
-import React from "react"
+import React, { useState } from 'react';
+import EditForm from './EditForm';
 
-import EditForm from './EditForm.js'
+import './Member.css';
 
-export default function Member (props) {
-    return (
-        <>
-        <div>
-        <br></br>
-        <h3> {props.member.name} </h3>
-        <h3> {props.member.email} </h3>
-        <h3> {props.member.role} </h3>
-        <h3> {props.member.card} </h3>
-        <br></br>
-        <EditForm />
+function Member(props){
+    // console.log(props.member)
+
+    const [object, setObject] = useState(props.member)
+
+    return(
+        <div key={props.id}>
+            <h1>{object.name}</h1>
+            <h2>{object.email}</h2>
+            <h3>{object.role}</h3>
+            <EditForm setObject={setObject} member={object} />
         </div>
-        </>
     )
 }
+
+export default Member;
