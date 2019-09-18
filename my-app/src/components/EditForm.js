@@ -7,16 +7,12 @@ const EditForm = props => {
         <div>
             <form>
                 <input
-                placeholder='name'
+                    placeholder='name'
                 />
                 <input
-                placeholder='email'
+                    placeholder='email'
                 />
-                
-
-        
             </form>
-                        
         </div>
     )
 }
