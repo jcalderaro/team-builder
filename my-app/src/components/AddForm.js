@@ -14,8 +14,10 @@ const AddForm = props => {
     const addMember = e => {
         e.preventDefault()
         props.setTeamList([...props.teamList, input])
+        // setInput({ name: '', email: '', role: '', card: '' })
     }
 
+    
     return (
         <div>
             <form onSubmit={addMember}>
